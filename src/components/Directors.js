@@ -3,9 +3,9 @@ import { directors } from "../data";
 import NameAndMovies from "./NameAndMovies";
 
 function Directors() {
-  const directorsList= directors.map(director => 
+  const directorsList = directors.map(director =>
     <NameAndMovies key={director.name}
-     director={director}/>)
+      director={director} />)
   return <div>
     <h1>Directors Page</h1>
     {directorsList}
